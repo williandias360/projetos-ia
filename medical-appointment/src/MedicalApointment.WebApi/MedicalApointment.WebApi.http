@@ -1,0 +1,21 @@
+@MedicalApointment.WebApi_HostAddress = http://localhost:5120
+
+GET {{MedicalApointment.WebApi_HostAddress}}/api/medicos
+Accept: application/json
+
+###
+GET {{MedicalApointment.WebApi_HostAddress}}/api/medicos/especialidades
+Accept: application/json
+
+###
+GET {{MedicalApointment.WebApi_HostAddress}}/api/medicos/agendamentos
+Accept: application/json
+
+###
+POST {{MedicalApointment.WebApi_HostAddress}}/api/chat
+Accept: application/json
+Content-Type: application/json
+
+{
+  "Mensagem": "Olá. Gostaria de fazer um agendamento com algum cadiologista"
+}
